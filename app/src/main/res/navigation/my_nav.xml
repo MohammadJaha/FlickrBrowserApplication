@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/searchImages">
+
+
+    <fragment
+        android:id="@+id/searchImages"
+        android:name="com.example.flickrbrowserappfragments.SearchImages"
+        android:label="fragment_search_images"
+        tools:layout="@layout/fragment_search_images" >
+        <action
+            android:id="@+id/action_searchImages_to_showImages"
+            app:destination="@id/showImages" />
+    </fragment>
+    <fragment
+        android:id="@+id/showImages"
+        android:name="com.example.flickrbrowserappfragments.ShowImages"
+        android:label="fragment_show_images"
+        tools:layout="@layout/fragment_show_images" >
+        <action
+            android:id="@+id/action_showImages_to_searchImages"
+            app:destination="@id/searchImages" />
+    </fragment>
+</navigation>
