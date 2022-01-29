@@ -1,11 +1,11 @@
-package com.example.flickrbrowserappfragments
+package com.example.flickrbrowserapp
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.flickrbrowserappfragments.databinding.ImagesViewBinding
+import com.example.flickrbrowserapp.databinding.ImagesViewBinding
 import io.github.muddz.styleabletoast.StyleableToast
 
 class RVAdapter (private val context: Context,private var list: ArrayList<Data>, private val classNumber: Int): RecyclerView.Adapter<RVAdapter.ItemViewHolder>() {
@@ -17,6 +17,7 @@ class RVAdapter (private val context: Context,private var list: ArrayList<Data>,
         }
     }
 
+    private lateinit var hold: RecyclerView.ViewHolder
     private lateinit var myListener: OnItemClickListener
     interface OnItemClickListener{
         fun onItemClick(position: Int)

@@ -1,4 +1,4 @@
-package com.example.flickrbrowserappfragments
+package com.example.flickrbrowserapp
 
 import android.content.Context
 import androidx.room.Database
