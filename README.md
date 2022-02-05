@@ -22,6 +22,7 @@ This Application Uses **SQLite**
 * •	Browse Images as List
 * •	Browse Images as Collection
 * •	Display Full Screen Images
+* •	Uses Custom Alerts
 * • Save Favorite Images in SQLite Database
 * • Browse Favorite Images from SQLite Database
 * • Display Full Screen Favorite Images from SQLite Database
